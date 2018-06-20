@@ -1,0 +1,101 @@
+﻿.container {
+    display: grid;
+    grid-gap: 8px 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(15, 55px);
+    margin: auto;
+}
+
+/*NAVBAR STYLE*/
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+    li a {
+        justify-content: space-between;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 200px;
+        text-decoration: none;
+        justify-content: space-between;
+    }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+/*ABOUT THE CAFE STYLE*/
+
+.grid-item-2 {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    background-color: #232123;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.grid-item-3 {
+    grid-row: 3 / span 6;
+    grid-column: 1;
+    background-image: url('aboutpics/tim-gouw-60216-unsplash.jpg');
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.grid-item-4 {
+    grid-row: 3 / span 6;
+    grid-column: 2;
+    padding: 10px;
+    background-color: #232123;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+/*ABOUT THE OWNER STYLE*/
+.grid-item-5 {
+    grid-row: 10;
+    grid-column: 2 / span 2;
+    background-color: #232123;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.grid-item-6 {
+    grid-row: 11 / span 6;
+    grid-column: 3;
+    background-image: url('aboutpics/ownerpic.jpg');
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.grid-item-7 {
+    grid-row: 11 / span 6;
+    grid-column: 2;
+    padding: 10px;
+    background-color: #232123;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}

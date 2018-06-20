@@ -1,0 +1,103 @@
+﻿.container {
+    display: grid;
+    grid-gap: 8px 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(20, 55px);
+    margin: auto;
+}
+
+/*NAVBAR STYLE*/
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+    li a {
+        justify-content: space-between;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 200px;
+        text-decoration: none;
+        justify-content: space-between;
+    }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+/*MAIN PHOTO*/
+.grid-item-2 {
+    grid-row: 2 / span 12;
+    grid-column: 1 / span 3;
+    background-image: url('homepagepics/vladimir-proskurovskiy-532426-unsplash.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+/*HOURS STYLE*/
+.grid-item-3 {
+    text-align: center;
+    grid-row: 14 / span 6;
+    grid-column: 1;
+    background-color: #232123;
+    color: white;
+    border-radius: 25px;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+}
+
+p {
+    font-family: 'Dosis', sans-serif;
+}
+
+/*CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL* {*/
+.slider {
+    grid-row: 14/span6;
+    grid-column: 2;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 25px;
+    width: 439px;
+    height: 390px;
+}
+
+    .slider > div {
+        flex-shrink: 0;
+        width: 300px;
+        height: 200px;
+        padding-right: 10px;
+        border-radius: 25px;
+    }
+/*END CAROUSEL*/
+
+/*MAP STYLE*/
+#nymap {
+    background-image: url('homepagepics/Untitled.png');
+    display: block;
+    text-indent: -9999px;
+    grid-row: 14 / span 6;
+    grid-column: 3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
